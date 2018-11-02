@@ -91,7 +91,7 @@ public class GamePage {
 			
 			//	Click correct answer to reload a new quiz
 			weFirstLineup.get(iFirstCorrectAnsIndex).click();
-			  
+			    
 			//	Wait for new quiz lineup to load
 			uWait.waitForNumElements(byPhoto, iNumInLineup);
 			

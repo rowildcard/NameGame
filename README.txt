@@ -38,7 +38,7 @@ TO EXECUTE
       B. Build Automation
       C. Test environment
       E. Eclipse Oxygen
-
+  
   II. To RUN THE AUTOMATION
       A. Clone the project from GitHub
       B. Open the project in GitHub

@@ -12,7 +12,7 @@ import org.openqa.selenium.WebDriver;
 //	Name Game Assessment 10.29.2018
 
 public class NGtests {
-	  
+	    
 	static WebDriver driver;
 
 	//	Setting up a Web Driver before each test will reset the User session.

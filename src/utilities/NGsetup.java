@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class NGsetup {
 	    
 	public WebDriver driver;
-	  
+	    
 	//	SetUp() - basic setup for Chrome webdriver
 	public static WebDriver SetUp() {
 	
