@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\MrsPeel\AppData\Local\Temp\testng-eclipse-2022996462\testng-customsuite.xml</span>
+                    <span>C:\Users\MrsPeel\AppData\Local\Temp\testng-eclipse--303044388\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,10 +102,39 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.NGtests" hash-for-method="verifyCounterTriesAndCorrect">verifyCounterTriesAndCorrect</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.NGtests" hash-for-method="verifyWhoIsAndLineupChange">verifyWhoIsAndLineupChange</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.NGtests" hash-for-method="frequencyOfWrongVsCorrect">frequencyOfWrongVsCorrect</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.NGtests" hash-for-method="verifyCounterStreak">verifyCounterStreak</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.NGtests" hash-for-method="verifyWhoIsAppearsInLineup">verifyWhoIsAppearsInLineup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -123,6 +152,53 @@
               <span class="class-name">test.java.NGtests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCounterTriesAndCorrect">
+                  </a> <!-- verifyCounterTriesAndCorrect -->
+                  <span class="method-name">verifyCounterTriesAndCorrect</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [2] but found [1]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at org.testng.asserts.Assertion$27.doAssert(Assertion.java:347)
+	at org.testng.asserts.Assertion.executeAssert(Assertion.java:30)
+	at org.testng.asserts.Assertion.doAssert(Assertion.java:15)
+	at org.testng.asserts.Assertion.assertEquals(Assertion.java:344)
+	at pages.GamePage.verifyCounterTriesAndCorrect(GamePage.java:161)
+	at test.java.NGtests.verifyCounterTriesAndCorrect(NGtests.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="verifyWhoIsAndLineupChange">
@@ -148,8 +224,8 @@
 	   first and second equal,
 	   first and second equal
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at pages.GamePage.verifyWhoIsAndLineupChange(GamePage.java:119)
-	at test.java.NGtests.verifyWhoIsAndLineupChange(NGtests.java:53)
+	at pages.GamePage.verifyWhoIsAndLineupChange(GamePage.java:117)
+	at test.java.NGtests.verifyWhoIsAndLineupChange(NGtests.java:47)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -181,10 +257,39 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.java.NGtests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="frequencyOfWrongVsCorrect">
+                  </a> <!-- frequencyOfWrongVsCorrect -->
+                  <span class="method-name">frequencyOfWrongVsCorrect</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCounterStreak">
+                  </a> <!-- verifyCounterStreak -->
+                  <span class="method-name">verifyCounterStreak</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWhoIsAppearsInLineup">
+                  </a> <!-- verifyWhoIsAppearsInLineup -->
+                  <span class="method-name">verifyWhoIsAppearsInLineup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\MrsPeel\AppData\Local\Temp\testng-eclipse-2022996462\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\MrsPeel\AppData\Local\Temp\testng-eclipse--303044388\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -233,16 +338,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyWhoIsAndLineupChange')
+data.setCell(0, 1, 'frequencyOfWrongVsCorrect')
 data.setCell(0, 2, 'test.java.NGtests')
-data.setCell(0, 3, 4561);
+data.setCell(0, 3, 7850);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyWhoIsAndLineupChange')
+data.setCell(1, 2, 'test.java.NGtests')
+data.setCell(1, 3, 4727);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyCounterTriesAndCorrect')
+data.setCell(2, 2, 'test.java.NGtests')
+data.setCell(2, 3, 4601);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyCounterStreak')
+data.setCell(3, 2, 'test.java.NGtests')
+data.setCell(3, 3, 4300);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyWhoIsAppearsInLineup')
+data.setCell(4, 2, 'test.java.NGtests')
+data.setCell(4, 3, 4105);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 25 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -274,14 +395,64 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyWhoIsAndLineupChange</span>
-                <span class="method-start">4880 ms</span>
+                <span class="method-name">frequencyOfWrongVsCorrect</span>
+                <span class="method-start">4783 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">AfterTests</span>
-                <span class="method-start">9445 ms</span>
+                <span class="method-start">12635 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeTests</span>
+                <span class="method-start">13403 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyCounterStreak</span>
+                <span class="method-start">17735 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterTests</span>
+                <span class="method-start">22036 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeTests</span>
+                <span class="method-start">22796 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyCounterTriesAndCorrect</span>
+                <span class="method-start">26838 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterTests</span>
+                <span class="method-start">31442 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeTests</span>
+                <span class="method-start">32204 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyWhoIsAndLineupChange</span>
+                <span class="method-start">35913 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterTests</span>
+                <span class="method-start">40642 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeTests</span>
+                <span class="method-start">41414 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyWhoIsAppearsInLineup</span>
+                <span class="method-start">45100 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterTests</span>
+                <span class="method-start">49206 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
