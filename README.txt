@@ -6,32 +6,32 @@ TESTER Rhonda Oglesby
 ----------------------------
 
 PAGE OBJECTS
-•	GamePage
+â€¢	GamePage
 
 @TESTS
-•	Verify the "streak" counter is incrementing on "correct" selections. 
-•	Verify the multiple "streak" counter resets after getting an incorrect answer. 
-•	Verify that after 10 random selections the correct counters are being incremented for "tries" and "correct" counters. 
-•	Verify name and displayed photos change after selecting the correct answer. 
-•	Bonus - Write a test to verify that failing to select one person’s name correctly makes that person appear more frequently than other “correctly selected” people. 
+â€¢	Verify the "streak" counter is incrementing on "correct" selections. 
+â€¢	Verify the multiple "streak" counter resets after getting an incorrect answer. 
+â€¢	Verify that after 10 random selections the correct counters are being incremented for "tries" and "correct" counters. 
+â€¢	Verify name and displayed photos change after selecting the correct answer. 
+â€¢	Bonus - Write a test to verify that failing to select one personâ€™s name correctly makes that person appear more frequently than other â€œcorrectly selectedâ€ people. 
 
 
 ENVIRONMENT
-•	Windows 8.1 Pro
-•	Chrome 69.0.3497.100
-•	Eclipse Oxygen.3a
+â€¢	Windows 8.1 Pro
+â€¢	Chrome 69.0.3497.100
+â€¢	Eclipse Oxygen.3a
 
 TOOLS
-•	Java 1.8.0_152
-•	Maven 4.0
-•	TestNG 6.13.1
-•	Selenium 3.8.1
-•	ChromeDriver 2.33.506120
+â€¢	Java 1.8.0_152
+â€¢	Maven 4.0
+â€¢	TestNG 6.13.1
+â€¢	Selenium 3.8.1
+â€¢	ChromeDriver 2.33.506120
 ----------------------------
 
 TO EXECUTE
-•	These instructions are for a Windows machine.
-•	The following outlines the main process. Detailed steps follow.
+â€¢	These instructions are for a Windows machine.
+â€¢	The following outlines the main process. Detailed steps follow.
 
    I. PRE-REQUISITES
       A. Java
@@ -41,8 +41,7 @@ TO EXECUTE
   
   II. To RUN THE AUTOMATION
       A. Clone the project from GitHub
-      B. Open the project in GitHub
-      C. Navigate to NameGame > src > test.java 
+      B. Import as a Maven in Eclipse 
       D. Right click on "NGtests.java".
       E. Select Run As > TestNG Test
    --------------
@@ -54,9 +53,9 @@ TO EXECUTE
           1. If you do not already have Java installed on your machine, go to Oracle's web site to download the executable
              Java SE Development Kit 8u152 for Windows 64
              http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
- 	  2. Run the downloaded .exe to install Java. Take note of the path where it is installed on your machine.
+ 	      2. Run the downloaded .exe to install Java. Take note of the path where it is installed on your machine.
              >> Ex. "C:\Program Files\Java\jdk1.8.0_152"
-	  3. In Windows explorer right-click on "This PC" and select "Properties."
+	      3. In Windows explorer right-click on "This PC" and select "Properties."
           4. To the right of "Computer name, domain, and workgroup settings" click "Change settings."
              >> The Systems Properties pop-up appears.
           5. Select the "Advanced" tab and select "Environment variables."
@@ -75,7 +74,7 @@ TO EXECUTE
           1. If you do not already have Maven installed on your machine, go to Apache's web site to download the 
              Binary zip archive file.
              http://maven.apache.org/download.cgi
-	  2. Extract the zip folder into a new folder called "maven".
+	  	  2. Extract the zip folder into a new folder called "maven".
              >> Ex. "C:\maven\apache-maven-4.0"
           3. Follow steps 3 - 6 under "A. IDE" above. This time you're adding the location of Maven to the System variable Path.
              >> Ex. " "C:\maven\apache-maven-4.0\bin"
@@ -87,15 +86,17 @@ TO EXECUTE
 
   II. RUN THE AUTOMATION TEST
       A. Download and extract
-          1. From GitHub download the zip folder for the project. (link provided via email)
-          2. Extract the zip folder.
-      B. Execute
-          1. From the command line navigate to the project folder. 
-          2. Entering the 'dir' command should show the pom.xml file for the project.
-          3. Enter "mvn test". 
-
- 
-
-
-
-
+          1. From GitHub clone the project as a zip folder. (link provided via email & Test Strategy document)
+          2. Extract the zip folder to a desired location on your local machine.
+      B. Execute in Eclipse
+          1. Open Eclipse
+          2. Under > File select > Import
+          3. Under the Maven import wizard, select "Existing Maven Projects".
+          4. Click "Next".
+          5. Click the Browse button and select the folder for the project. Click "Ok".
+          	 	> The Projects list should list the pom for the project
+          6. Click on the pom in the Projects list.
+          7. Click "Finish".
+          8. In Project Explorer, expand the project folder.
+          9. Expand the src folder and test.java folder.
+         10. Right click on "NGtests.java" and select "Run As" "TestNG Test".
