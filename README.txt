@@ -76,7 +76,7 @@ TO EXECUTE
              >> Ex. "C:\maven\apache-maven-4.0"
           3. Follow steps 3 - 6 under "A. IDE" above. This time you're adding the location of Maven to the System variable Path.
              >> Ex. " "C:\maven\apache-maven-4.0\bin"
-
+                     
       C. Test environment
          These tests are designed to run in the Chrome browser.
          1. If you do not already have Chrome installed on your machine, go to Chrome's web site to download Chrome.
