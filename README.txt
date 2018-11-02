@@ -66,7 +66,7 @@ TO EXECUTE
           8. For Variable name enter "JAVA_HOME". For Variable value enter the location of java on your machine (step 2). 
              >> Ex. "C:\Program Files\Java\jdk1.8.0_152"
           9. Select OK on all the opened windows: New User Variable, Environment Variables, Systems Properties. 
-
+  
       B. Build Automation
          This project uses Maven 4.0 to manage building the automation using Selenium and TestNG.
           1. If you do not already have Maven installed on your machine, go to Apache's web site to download the 

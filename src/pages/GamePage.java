@@ -87,7 +87,7 @@ public class GamePage {
 			//	Save the names in the lineup
 			for (int i = 0; i < iNumInLineup; i++) {
 				sFirstLineupNames[i] = weFirstLineup.get(i).findElement(byPhotoName).getText();
-			}  
+			}    
 			
 			//	Click correct answer to reload a new quiz
 			weFirstLineup.get(iFirstCorrectAnsIndex).click();
