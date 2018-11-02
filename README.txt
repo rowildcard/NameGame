@@ -40,8 +40,11 @@ TO EXECUTE
       E. Eclipse Oxygen
 
   II. To RUN THE AUTOMATION
-      A. Save and extract project file
-      B. Execute
+      A. Clone the project from GitHub
+      B. Open the project in GitHub
+      C. Navigate to NameGame > src > test.java 
+      D. Right click on "NGtests.java".
+      E. Select Run As > TestNG Test
    --------------
 
       STEPS
