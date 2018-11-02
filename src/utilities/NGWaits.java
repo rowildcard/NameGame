@@ -23,7 +23,7 @@ public class NGWaits {
 		WebDriverWait wait = new WebDriverWait(driver, 5);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(byElement) );
 	}	//	---
-	    
+	      
 	//	Wait for ALL <byElement>s to be visible
 	public void waitForVisibilityAll(By byElement) {
 		WebDriverWait wait = new WebDriverWait(driver, 5);
