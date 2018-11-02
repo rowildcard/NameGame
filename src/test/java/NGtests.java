@@ -28,47 +28,41 @@ public class NGtests {
 	public static void AfterTests() {
 		driver.quit();
 	}
-	
-	//	@Test ----------------------------- COUNTERS	
 	//
 	//	Verify "streak" increments on "correct" selections
-	
 	//	Verify "streak" is reset on an incorrect selection
-	
 	//	Verify that after 10 random selections the counters are incremented correctly
-	
 	//	Verify "name" and lineup photos change after a correct answer is selected
-	
 	//	Colleagues that become "phone wrong" appear more frequently in lineup than Colleagues that become "photo correct"
 	
-	//@Test
+	@Test
 	//	--- DONE
-	//public static void verifyWhoIsAppearsInLineup() {
-	//	new GamePage(driver).verifyWhoIsAppearsInLineup();
-	//}
+	public static void verifyWhoIsAppearsInLineup() {
+		new GamePage(driver).verifyWhoIsAppearsInLineup();
+	}
 	
 	@Test 
-	//	--- DONE
+	//	--- Errors
 	public static void verifyWhoIsAndLineupChange() {
 		new GamePage(driver).verifyWhoIsAndLineupChange(3);
 	}
 	
-	//@Test 
+	@Test 
 	//	--- DONE but assertions fail randomly on wrong clicks and sometimes Stale Element Exception
-	//public static void verifyCounterTriesAndCorrect() {
-	//	new GamePage(driver).verifyCounterTriesAndCorrect(5);
-	//}
+	public static void verifyCounterTriesAndCorrect() {
+		new GamePage(driver).verifyCounterTriesAndCorrect(5);
+	}
 	
-	//@Test
+	@Test
 	//	--- DONE
-	//public static void verifyCounterStreak() {
-	//	new GamePage(driver).verifyCounterStreak(3, 1);
-	//}
+	public static void verifyCounterStreak() {
+		new GamePage(driver).verifyCounterStreak(3, 1);
+	}
 	
-	//@Test	
+	@Test	
 	//	--- MOSTLY DONE
-	//public static void frequencyOfWrongVsCorrect() {
-	//	new GamePage(driver).frequencyOfWrongVsCorrect(13); //	The sample size should be >= number of employees
-	//}
+	public static void frequencyOfWrongVsCorrect() {
+		new GamePage(driver).frequencyOfWrongVsCorrect(13); //	The sample size should be >= number of employees
+	}
 	
 }	//	class

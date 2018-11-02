@@ -87,7 +87,6 @@ public class GamePage {
 			//	Save the names in the lineup
 			for (int i = 0; i < iNumInLineup; i++) {
 				sFirstLineupNames[i] = weFirstLineup.get(i).findElement(byPhotoName).getText();
-				System.out.println("   first lineup = " + sFirstLineupNames[i]);
 			}
 			
 			//	Click correct answer to reload a new quiz
@@ -107,7 +106,6 @@ public class GamePage {
 			//	Save the names in the lineup
 			for (int i = 0; i < iNumInLineup; i++) {
 				sSecondLineupNames[i] = weSecondLineup.get(i).findElement(byPhotoName).getText();
-				System.out.println("   second lineup = " + sSecondLineupNames[i]);
 			}
 			
 			for (int i = 0; i < iNumInLineup; i++) {
@@ -151,9 +149,7 @@ public class GamePage {
 					hAssert.assertEquals(Integer.parseInt(driver.findElement(byCorrect).getText()), iNumCorrect);
 					uWait.waitForNumElements(byPhoto, iNumInLineup);
 					hAssert.assertEquals(Integer.parseInt(driver.findElement(byTries).getText()), i + 1);
-					System.out.println("   tries asserted");
 					hAssert.assertEquals(Integer.parseInt(driver.findElement(byCorrect).getText()), iNumCorrect);
-					System.out.println("   correct asserted");
 					weLineup = driver.findElements(byPhoto);
 					iAnswerX = getCorrectAnsIndex();
 					iRandomX = getRandomIndexList(iNumInLineup);
@@ -163,7 +159,6 @@ public class GamePage {
 					System.out.println("   wrong answer clicked");
 					uWait.waitForRefresh(byPhotoWrong, (iRX + 1));
 					hAssert.assertEquals(Integer.parseInt(driver.findElement(byTries).getText()), i + 1);
-					System.out.println("   tries asserted");
 					iRX++; 
 				}
 			}
